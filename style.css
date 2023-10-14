@@ -1,0 +1,381 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222222;
+}
+
+/* Style the header and navigation */
+header {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #222222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+}
+
+navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+navbar .logo {
+    height: 40px;
+    background-color: #222222;
+    outline: none;
+}
+
+navbar .right-side a {
+    margin-left: 20px;
+}
+
+navbar .right-side a:hover {
+    text-decoration: underline;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* Style the sections */
+section {
+    color: white;
+}
+
+#hero {
+    padding: 4rem 2rem;
+    background-image: url("Images/hero_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+#hero .service-button-section {
+    margin-top: 2rem;
+}
+
+#hero .service-button {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#hero .service-button:hover {
+    background-color: #955FEB;
+    color: white;
+}
+
+#services #box-section {
+    display: flex;
+    margin: 1rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#services #title {
+    padding-top: 4rem;
+    font-size: 32px;
+}
+
+#service-box,
+#service-box h2,
+#service-box p {
+    background-color: #955FEB;
+}
+
+#service-box h2 {
+    margin-bottom: 1rem;
+}
+
+#service-box {
+    flex: 1;
+    min-width: 40%;
+    height: auto;
+    padding: 20px;
+    margin: 0.75rem;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 5px;
+    font-weight: 200
+}
+
+#mission, 
+#services,
+#team {
+    text-align: center;
+}
+
+#mission {
+    padding: 2rem 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#mission h2 {
+    margin-bottom: 1rem;
+    font-size: 32px;
+}
+
+#mission p {
+    font-size: 18px;
+}
+
+#team {
+    margin-bottom: 2rem;
+}
+
+#team h2 {
+    font-size: 32px;
+}
+
+.team-member {
+    display: inline-block;
+    text-align: center;
+    margin: 2rem;
+    
+}
+  
+.team-member img {
+    width: 300px; /* Adjust the image size as needed */
+    border-radius: 50%; /* Creates a circular image shape */
+}
+  
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+  
+.team-member p {
+    font-size: 14px;
+    color: #888;
+}
+  
+
+#faq {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+#faq h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#faq .question-box {
+	background-color: black;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#faq p {
+    background-color: transparent;
+}
+
+#faq .question-section {
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#faq .question-section p {
+	font-weight: 500;
+}
+
+#faq .question-section #unopened {
+	background-color: black;
+}
+
+#faq .question-section a {
+	right: 0;
+	background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+#faq .question-section i {
+	padding: 0px 5px 5px;
+	border-radius: 25px;
+	background-color: black;
+}
+
+#faq .question-section #opened {
+	display: none;
+	background-color: black;
+}
+
+#faq #answer-section {
+	display: none;
+	background-color: black;
+}
+
+#faq #answer-section p {
+	margin-top: 1rem;
+    font-weight: 100;
+}
+
+#contact {
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+#contact .contact-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    margin-right: 2rem;
+    border-top: 1px solid #767676;
+    flex-wrap: wrap;
+}
+
+#contact .contact-section .footer {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+#contact .contact-right-side {
+    display: flex;
+}
+
+#contact .contact-right-side .contact-info {
+    margin-right: 3rem;
+}
+
+#contact h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#contact #contact-header {
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+#contact p {
+    font-weight: 200;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Adjustments based on screen size */
+
+@media (max-width:799px) {
+	
+    #navbar {
+	    display: none;
+    	transition: display 1s ease-in-out;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    justify-content: flex-start;
+	    position: fixed;
+	    right: 0;
+	    top: 0;
+	    height: 100vh;
+	    width: 200px;
+	    background-color: #222222;
+	    box-orient: 0 40px 60px rgba(0, 0, 0, 0.1);
+	    padding: 80px 0 0 10px;
+	    box-shadow: -5px 0 5px rgba(0,0,0,0.1);
+	}
+    
+    #close .fa-times {
+		background-color: #222222;
+        color: white;
+	}
+
+	#mobile .fa-bars {
+		background-color: #222222;
+		cursor: pointer;
+        color: white;
+	}
+
+	#navbar.active {
+		display: flex;
+	}
+
+	navbar .right-side a {
+		margin-bottom: 25px;
+        font-weight: 500;
+	}
+
+	#mobile {
+		display: flex;
+		align-items: center;
+	}
+
+	#mobile i {
+		color: black;
+		font-size: 20px;
+		padding-left: 20px;
+	}
+
+	navbar #close {
+		display: initial;
+		position: absolute;
+		top: 20px;
+		color: #222;
+		font: 24px;
+	}
+
+	#lg-bag {
+		display: none;
+	}
+}
+
+@media (max-width:700px) {
+
+    /* #services #box-section {
+        flex-direction: column;
+    }
+
+    #service-box {
+        flex: none;
+        width: 100%;
+    } */
+
+}
